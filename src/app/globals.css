@@ -14,7 +14,7 @@
     @apply text-sm;
   }
 
-  article {
+  .article {
     margin-bottom: 2rem;
 
     &::before {
@@ -33,13 +33,13 @@
     }
   }
 
-  ul {
+  .ul {
     display: flex;
     flex-direction: column;
     gap: .5rem;
   }
 
-  ul li {
+  .ul li {
     &::before {
       content: '';
       display: inline-block;
@@ -85,6 +85,10 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+
+br {
+  user-select: none;
 }
 
 a,
