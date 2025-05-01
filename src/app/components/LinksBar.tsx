@@ -2,8 +2,8 @@ import React from 'react'
 
 const LinksBar = () => {
   return (
-    <>
-      <div className="flex gap-2">
+    <div className="flex flex-col gap-2 items-center ">
+      <div className="flex gap-2 ">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://t.me/gepardoj"
@@ -46,11 +46,12 @@ const LinksBar = () => {
         </a>
       </div>
       <a
+        className="row-span-2"
         href="mailto:anna.ra.phoenix@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >anna.ra.phoenix@gmail.com</a>
-    </>
+    </div>
   )
 }
 

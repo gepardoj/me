@@ -10,14 +10,52 @@
 
 @layer base {
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
+  body {
     @apply text-sm;
+  }
+
+  article {
+    margin-bottom: 2rem;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 8px;
+      width: 100%;
+    }
+
+    &:nth-child(odd)::before {
+      background: linear-gradient(90deg, var(--accent-01), var(--accent-02));
+    }
+
+    &:nth-child(even)::before {
+      background: linear-gradient(-90deg, var(--accent-01), var(--accent-02));
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  ul li {
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: .5rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    &:nth-child(odd)::before {
+      background-color: var(--accent-01);
+    }
+
+    &:nth-child(even)::before {
+      background-color: var(--accent-02);
+    }
   }
 }
 
@@ -26,9 +64,11 @@
   --color-foreground: var(--foreground);
   --color-accent-01: var(--accent-01);
   --color-accent-02: var(--accent-02);
-  --text-xl: 32;
-  --text-md: 24;
-  --text-sm: 16;
+  --bg-accent-01: var(--accent-01);
+  --bg-accent-02: var(--accent-02);
+  --text-xl: 32px;
+  --text-md: 24px;
+  --text-sm: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,15 +87,14 @@ body {
   min-height: 100vh;
 }
 
-
-
 a,
 .hl
 
 /* highlighted */
   {
-  background: linear-gradient(180deg, var(--accent-01), var(--accent-02));
+  background: linear-gradient(170deg, var(--accent-01), var(--accent-02));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-weight: bold;
 }
