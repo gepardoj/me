@@ -24,6 +24,10 @@
       width: 100%;
     }
 
+    * {
+      @apply mx-2
+    }
+
     &:nth-child(odd)::before {
       background: linear-gradient(90deg, var(--accent-01), var(--accent-02));
     }
@@ -83,7 +87,6 @@ body {
   color: var(--foreground);
   font-family: Inter;
   display: flex;
-  justify-content: center;
   min-height: 100vh;
 }
 

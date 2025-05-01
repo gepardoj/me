@@ -8,10 +8,10 @@ import UnoIcon from "./components/UnoIcon";
 
 export default function Home() {
   return (
-    <div className="flex flex-col m-4 min-w-md max-w-7xl">
-      <header className="flex flex-col items-center">
+    <div className="flex flex-col min-w-md max-w-7xl">
+      <header className="flex flex-col items-center px-2">
         <h1 className="hl text-xl">Anna Raskovalova</h1>
-        <div className="grid grid-cols-[auto_1fr] gap-x-4 items-center">
+        <div className="grid grid-cols-[1fr_2fr] items-center">
           <Image
             className="rounded-full row-span-2 justify-self-center m-2"
             src="/me/me.webp"
@@ -20,14 +20,14 @@ export default function Home() {
             height={100}
             priority
           />
-          <h2 className="hl text-xl relative right-10">Frontend Dev</h2>
+          <h2 className="hl text-xl relative right-10 text-nowrap">Frontend Dev</h2>
           <h3 className="text-md text-center relative right-10 bottom-5">2 years React</h3>
           <LinksBar />
         </div>
       </header>
       <main className="grow">
         <Bantique type="1" />
-        <section className="flex flex-col">
+        <section className="flex flex-col px-2">
           <h2 className="hl text-xl relative bottom-3 mr-auto">Core Stack</h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-xl self-center">
             <pre className="hl text-xl">React</pre>
@@ -50,9 +50,9 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col gap-2">
-          <h2 className="hl text-xl mr-auto">Work Exp 4 years</h2>
-          <p className="text-md">1y Engineer in ITSM</p>
-          <p className="text-md">1y FullStack (Java/Scala)</p>
+          <h2 className="hl text-xl mr-auto ml-2">Work Exp 4 years</h2>
+          <p className="ml-2">1y Engineer in ITSM</p>
+          <p className="ml-2">1y FullStack (Java/Scala)</p>
           <h2 className="hl text-xl self-center">2 years Frontend Dev</h2>
           <article className="article flex flex-col gap-2">
             <div className="flex items-end flex-wrap">
@@ -84,7 +84,7 @@ export default function Home() {
           </article>
         </section>
         <Bantique type="2" />
-        <section className="flex flex-col">
+        <section className="flex flex-col px-2">
           <h2 className="hl text-xl self-end relative bottom-3">Pet Projects</h2>
           <ul>
             <li>
