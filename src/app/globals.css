@@ -24,7 +24,7 @@
       width: 100%;
     }
 
-    * {
+    >* {
       @apply mx-2
     }
 
@@ -44,8 +44,12 @@
   }
 
   .ul li {
+    display: flex;
+    align-items: center;
+
     &::before {
       content: '';
+      flex-shrink: 0;
       display: inline-block;
       margin-right: .5rem;
       width: 16px;
@@ -75,6 +79,18 @@
   --text-sm: 16px;
 }
 
+@media (min-width: theme(--breakpoint-lg)) {
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+      "a b"
+      "c b"
+      "f f";
+    min-height: 100vh;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -88,6 +104,8 @@ body {
   font-family: Inter;
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
 
 br {

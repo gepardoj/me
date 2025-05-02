@@ -11,10 +11,10 @@ const type2 = {
   second: "h-[30px] w-[100px] bg-accent-02 absolute left-[80px] -rotate-45",
 }
 
-const Bantique = (props: { type: "1" | "2" }) => {
+const Bantique = (props: { className?: string, type: "1" | "2" }) => {
   const styles = props.type === "1" ? type1 : type2
   return (
-    <div className={styles.bantique}>
+    <div className={`${props.className} ${styles.bantique}`}>
       <div className={styles.first}></div>
       <div className={styles.second}></div>
     </div>
