@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  basePath: "/me",
+  basePath: process.env.NODE_ENV === 'production' ? '/me' : '',
   output: "export",
 };
 

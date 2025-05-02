@@ -1,10 +1,10 @@
-import Image from "next/image";
 import LinksBar from "./components/LinksBar";
 import Bantique from "./components/Bantique";
 import PersonaIcon from "./components/PersonaIcon";
 import ChartIcon from "./components/ChartIcon";
 import MineIcon from "./components/MineIcon";
 import UnoIcon from "./components/UnoIcon";
+import Image from "./components/Image";
 
 export default function Home() {
   return (
@@ -15,11 +15,12 @@ export default function Home() {
           <div className="grid grid-cols-[1fr_2fr] items-center">
             <Image
               className="rounded-full row-span-2 justify-self-center m-2"
-              src="/me/me.webp"
+              src="/me.webp"
               alt="Anna Raskovalova"
               width={100}
               height={100}
               priority
+              unoptimized
             />
             <h2 className="hl text-xl relative right-10 text-nowrap">Frontend Dev</h2>
             <h3 className="w-fit ml-10 text-md text-center relative right-10 bottom-5">2 years React</h3>
