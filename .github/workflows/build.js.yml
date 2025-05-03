@@ -1,4 +1,4 @@
-name: Deploy Next.js + PNPM to GihHub Pages
+name: Deploy Astro + PNPM to GihHub Pages
 
 on:
   push:
@@ -39,15 +39,15 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run build
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder
-          path: './out'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
