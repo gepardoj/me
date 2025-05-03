@@ -1,14 +1,15 @@
 ---
+import { Image } from "astro:assets";
 import Bantique from "./Bantique.astro";
 import LinksBar from "./LinksBar.astro";
 ---
 
-<div class="content gap-x-8 min-w-md max-w-7xl py-2">
+<main class="content gap-x-8 min-w-md max-w-7xl py-2">
   <div style={{ gridArea: "a" }}>
     <header class="flex flex-col items-center px-2">
       <h1 class="hl text-xl">Anna Raskovalova</h1>
       <div class="grid grid-cols-[1fr_2fr] items-center">
-        <img
+        <Image
           class="rounded-full row-span-2 justify-self-center m-2"
           src="/me/me.webp"
           alt="Anna Raskovalova"
@@ -56,10 +57,12 @@ import LinksBar from "./LinksBar.astro";
     <h2 class="hl text-xl ml-10">2 years Frontend Dev</h2>
     <article class="article flex flex-col gap-2">
       <div class="flex items-end flex-wrap">
-        <h4 class="text-md mr-2">A Few Projects</h4><p>Outsourced at</p>
+        <h3 class="text-md mr-2">A Few Projects</h3><p>Outsourced at</p>
         <h3 class="hl italic text-md self-end relative ml-auto">
-          <a target="_blank" href="https://www.digitalleague.ru/"
-            >Digital League</a
+          <a
+            target="_blank"
+            href="https://www.digitalleague.ru/"
+            rel="noopener noreferrer">Digital League</a
           >
         </h3>
       </div>
@@ -104,10 +107,12 @@ import LinksBar from "./LinksBar.astro";
     </article>
     <article class="article flex flex-col gap-2">
       <div class="flex flex-wrap">
-        <h4 class="text-md">Corporate Device Detection App</h4>
+        <h3 class="text-md">Corporate Device Detection App</h3>
         <h3 class="hl italic text-md ml-auto">
-          <a target="_blank" href="https://www.alloysoftware.com/"
-            >Alloy Software</a
+          <a
+            target="_blank"
+            href="https://www.alloysoftware.com/"
+            rel="noopener noreferrer">Alloy Software</a
           >
         </h3>
       </div>
@@ -179,12 +184,14 @@ import LinksBar from "./LinksBar.astro";
           <a
             class="w-fit ml-20"
             href="https://www.figma.com/design/THmeKYRVqg2aOr9TQvyhVG/Portfolio?node-id=0-1&p=f&t=p9IwDQ2G27DDJ9do-0"
-            target="_blank">figma</a
+            target="_blank"
+            rel="noopener noreferrer">figma</a
           >
           <a
             class="w-fit ml-4"
             href="https://github.com/gepardoj/me"
-            target="_blank">code</a
+            target="_blank"
+            rel="noopener noreferrer">code</a
           >
           <br />
           <span class="hl w-fit ml-20">this site =)</span>
@@ -211,17 +218,20 @@ import LinksBar from "./LinksBar.astro";
           <a
             class="w-fit ml-20"
             href="https://github.com/gepardoj/minesweeper-v3-frontend"
-            target="_blank">web</a
+            target="_blank"
+            rel="noopener noreferrer">web</a
           >
           <a
             class="w-fit ml-4"
             href="https://github.com/gepardoj/D3D11Minesweeper"
-            target="_blank">c++</a
+            target="_blank"
+            rel="noopener noreferrer">c++</a
           >
           <br />
           <a
             href="https://t.me/ra_minesweeper_bot"
             target="_blank"
+            rel="noopener noreferrer"
             class="w-fit ml-20">@ra_minesweeper_bot</a
           >
         </li>
@@ -243,12 +253,14 @@ import LinksBar from "./LinksBar.astro";
           <a
             class="w-fit ml-20"
             href="https://github.com/gepardoj/Uno-unity"
-            target="_blank">unity</a
+            target="_blank"
+            rel="noopener noreferrer">unity</a
           >
           <a
             class="w-fit ml-4"
             href="https://github.com/gepardoj/uno-server"
-            target="_blank">node.js</a
+            target="_blank"
+            rel="noopener noreferrer">node.js</a
           >
         </li>
         <li>
@@ -282,4 +294,4 @@ import LinksBar from "./LinksBar.astro";
     <p class="mb-2">Contact Me</p>
     <LinksBar />
   </footer>
-</div>
+</main>
