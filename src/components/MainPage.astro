@@ -52,7 +52,7 @@ import LinksBar from "./LinksBar.astro";
     </section>
   </div>
   {/* Work Exp */}
-  <section class="flex flex-col gap-2" style={{ gridArea: "b" }}>
+  <section class="work-exp flex flex-col gap-2" style={{ gridArea: "b" }}>
     <h2 class="hl text-xl mr-auto ml-2">Work Exp 4 years</h2>
     <p class="ml-10">1y Engineer in ITSM</p>
     <p class="ml-10">1y FullStack (Java/Scala)</p>
@@ -160,9 +160,11 @@ import LinksBar from "./LinksBar.astro";
   </section>
   {/* Pet Projects */}
   <div style={{ gridArea: "c" }}>
-    <Bantique type={2} />
+    <Bantique className="pet-bantique" type={2} />
     <section class="flex flex-col px-2">
-      <h2 class="hl text-xl self-end relative bottom-3">Pet Projects</h2>
+      <h2 class="hl text-xl self-end relative bottom-3 print:bottom-8">
+        Pet Projects
+      </h2>
       <ul class="flex flex-col gap-2">
         <li>
           <svg

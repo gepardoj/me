@@ -78,6 +78,23 @@
   --text-sm: 16px;
 }
 
+@media print {
+
+  .work-exp {
+    page-break-before: always;
+  }
+
+  .pet-bantique {
+    page-break-before: always;
+    margin: 30px 0;
+  }
+
+  svg {
+    background-color: white;
+    border: none;
+  }
+}
+
 @media (min-width: theme(--breakpoint-lg)) {
   body {
     align-items: center;
