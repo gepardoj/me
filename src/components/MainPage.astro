@@ -165,7 +165,8 @@ import LinksBar from "./LinksBar.astro";
       <h2 class="hl text-xl self-end relative bottom-3 print:bottom-8">
         Pet Projects
       </h2>
-      <ul class="flex flex-col gap-2">
+      <ul class="flex flex-col gap-6">
+        <!-- Resume project -->
         <li>
           <svg
             class="inline mr-2 relative bottom-1"
@@ -200,6 +201,7 @@ import LinksBar from "./LinksBar.astro";
           <br />
           <span class="hl w-fit ml-20">this site =)</span>
         </li>
+        <!-- Minesweeper Project -->
         <li>
           <svg
             class="inline mr-2 relative bottom-1"
@@ -238,7 +240,28 @@ import LinksBar from "./LinksBar.astro";
             rel="noopener noreferrer"
             class="w-fit ml-20">@ra_minesweeper_bot</a
           >
+          <details>
+            <summary class="ml-20 hover:cursor-pointer">Images</summary>
+            <div class="flex gap-3 items-center justify-center">
+              <img
+                class="max-h-[400px]"
+                src="/me/web-game-field.webp"
+                alt="Game field in Web version"
+              />
+              <img
+                class="max-h-[400px]"
+                src="/me/d3d-game-field.webp"
+                alt="Game field in DirectX version"
+              />
+              <img
+                class="max-h-[400px]"
+                src="/me/d3d-atlas.webp"
+                alt="Image Atlas"
+              />
+            </div>
+          </details>
         </li>
+        <!-- Uno game project -->
         <li>
           <svg
             class="inline mr-2 relative bottom-1"
@@ -266,7 +289,15 @@ import LinksBar from "./LinksBar.astro";
             target="_blank"
             rel="noopener noreferrer">node.js</a
           >
+          <details>
+            <summary class="ml-20 hover:cursor-pointer">Video</summary>
+            <video height="400px" controls>
+              <source src="/me/uno.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </details>
         </li>
+        <!-- Learn French Project -->
         <li>
           <svg
             class="inline mr-2 relative bottom-1"
@@ -315,6 +346,21 @@ import LinksBar from "./LinksBar.astro";
             rel="noopener noreferrer"
             class="w-fit ml-20">@learn_french_anna_bot</a
           >
+          <details>
+            <summary class="ml-20 hover:cursor-pointer">Images</summary>
+            <div class="flex gap-3 items-center justify-center">
+              <img
+                class="h-[400px]"
+                src="/me/learn-french-01.jpg"
+                alt="Learn French App 1"
+              />
+              <img
+                class="h-[400px]"
+                src="/me/learn-french-02.jpg"
+                alt="Learn French App 2"
+              />
+            </div>
+          </details>
         </li>
       </ul>
     </section>
